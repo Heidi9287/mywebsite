@@ -112,7 +112,7 @@ body {
 }
 .secondRow {
   grid-area: aboutContent;
-  overflow-y: scroll;
+  overflow-y: auto;
   height:78vh
 }
 .about {
@@ -169,7 +169,7 @@ body {
   animation-timing-function: ease-out;
   animation-delay: 0s;
   animation-fill-mode: both;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .projects a {
   color: inherit;
@@ -223,7 +223,7 @@ body {
   grid-template-areas: "navbar" "contact";
 }
 .contact {
-  overflow-y: scroll;
+  overflow-y: auto;
   grid-area: contact;
   display: flex;
   flex-wrap: wrap;
