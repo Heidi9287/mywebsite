@@ -103,9 +103,8 @@ left:50%;
 .navbar {
   color: rgb(96, 11, 11);;
   grid-area: navbar;
-  margin: 2%;
+  margin:2% 5%;
   font-family: Helvetica, sans-serif;
-  font-weight: 200;
 }
 @keyframes fly-in-top {
   from {
