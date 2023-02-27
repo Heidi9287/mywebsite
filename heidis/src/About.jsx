@@ -18,7 +18,7 @@ const About = () => {
     };
   }, []);
   const backgroundStyle = {
-    backgroundColor: "#ffffffbf",
+    backgroundColor: "rgb(255 255 255 / 75%)",
     backgroundSize: "cover",
     transition: "background-color 2s ease-in-out",
     display: "grid",
@@ -28,7 +28,7 @@ const About = () => {
     height:'100vh',
   };
   if (isScrolled) {
-    backgroundStyle.backgroundColor = "black";
+    backgroundStyle.backgroundColor = "#f3eee2";
   }
 
   return (
@@ -73,7 +73,7 @@ const About = () => {
           </ul>
 
           <p className="cvTitle">
-            and more about my professional expeirences can be found
+            more about my professional expeirences can be found
             <a href="https://www.linkedin.com/in/heidilyu/"> here</a>
           </p>
         </div>

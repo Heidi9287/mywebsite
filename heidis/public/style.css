@@ -9,10 +9,10 @@ body {
   margin: 0;
 }
 .home {
-  display: grid;
   height: 100vh;
-  grid-template-rows: 20vh 1fr;
-  grid-template-areas: "navbar" "header";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @keyframes fly-in-left {
   from {
@@ -24,35 +24,84 @@ body {
 }
 
 .header {
-  grid-area: header;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  justify-content: end;
+  margin: auto;
+  text-align: center;
   animation-name: fly-in-left;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
-  color: rgb(123, 20, 20);
   animation-fill-mode: both;
+  background-color: #ffffff9c;
+  width: 100vw;
+  padding: 2% 0;
 }
 .slogan {
   font-size: 80px;
-  color: rgb(123, 20, 20);
+  color: rgb(96, 11, 11);
   line-height: 80px;
   letter-spacing: 4px;
   margin: 0;
 }
 .name {
   font-size: 90px;
-  color: white;
+  color: rgb(25, 57, 6);
   margin: 0;
 }
-.span {
+.span {  color: rgb(96, 11, 11);
   font-size: 55px;
 }
+@keyframes arrow-bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform:  translateY(10px);
+  }
+}
+.arrow-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+left:50%;
+  padding: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 30px;
+  cursor:pointer;
+}
+.arrowAnimation{  animation: arrow-bounce 1s ease-in-out infinite alternate;}
+
+.arrow-down2{
+  border: solid rgb(96, 11, 11);
+  border-width: 0 3px 3px 0;
+left:50%;
+  padding: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 30px;
+  cursor:pointer;
+}
+.arrow-down3{
+  border: solid rgb(96, 11, 11);
+  border-width: 0 3px 3px 0;
+left:50%;
+  padding: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 30px;
+  cursor:pointer;
+}
+.arrow-down4{
+  border: solid rgb(96, 11, 11);
+  border-width: 0 3px 3px 0;
+left:50%;
+  padding: 10px;
+  transform: rotate(225deg);
+  position: absolute;
+  bottom: 30px;
+  cursor:pointer;
+}
 .navbar {
-  color: white;
+  color: rgb(96, 11, 11);;
   grid-area: navbar;
   margin: 2%;
   font-family: Helvetica, sans-serif;
@@ -82,9 +131,8 @@ body {
 }
 .footer {
   grid-area: footer;
-  color: white;
   text-align: center;
-  color: rgb(123, 20, 20);
+  color:   rgb(96, 11, 11);;
 }
 .navBarList a {
   text-decoration: none;
@@ -117,14 +165,15 @@ body {
 }
 .about {
   color: rgb(155 116 67);
-  font-size: 18px;
-  font-family: "Bodoni Moda", serif;
+  font-size: 24px;
   line-height: 12px;
+  font-family: 'Lora', serif;
 }
 .cv {
   font-size: 18px;
   color: rgb(155 116 67);
-  font-family: "Bodoni Moda", serif;
+  font-family: 'Lora', serif;
+  margin-top: 10vh;
 }
 .cvTitle {
   font-size: 24px;
@@ -176,12 +225,12 @@ body {
 }
 .projectContent {
   width: 20vw;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   align-self: center;
   padding-bottom: 1vh;
   line-height: 21px;
-  font-family: "Bodoni Moda";
+  font-family: 'Lora', serif;
 }
 
 .codenames {
@@ -211,7 +260,7 @@ body {
   align-items: self-end;
   width: 50%;
   margin: 0 auto;
-  padding-bottom: 5vh;
+  padding-bottom: 15vh;
 }
 .contactWrapper {
   background-color: #657446;
