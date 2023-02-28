@@ -12,6 +12,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 https://heidisworld-com.onrender.com/
 
 
-### Known Issues that I will fix once I have more time
-- secondary pages cannot be refreshed
-- manually entering address like home/projects won't work
+feedacks and suggestions are welcome, email me at lyu9287@gmail.com!
