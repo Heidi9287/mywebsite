@@ -56,7 +56,7 @@ const About = () => {
               Communication Design
             </li>
           </ul>
-          <p  className="cvTitle">and I work with these technologies:</p>
+          <p  className="cvTitle">I work with these technologies:</p>
           <ul className="skills">
             <li>Javascsript</li>
             <li>Node.js</li>
