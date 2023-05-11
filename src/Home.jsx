@@ -26,7 +26,6 @@ const Home = () => {
       <div className="entireHome">
         <Navbar />
         <div class="home" ref={homeRef}>
-          <div className="empty1"></div>
           <div className="empty2"></div>
           <div className="intro">
             <p className="smallText1">Hi, my name is </p>
@@ -45,32 +44,29 @@ const Home = () => {
           </div>
           <div className="image"></div>
           <div className="empty4"></div>
-          {/* <h1 className="slogan"> Unleashing Creativity</h1>{" "} */}
-          {/* <span className="span">through</span>
-          <h1 className="slogan"> Technology</h1> */}
         </div>
       </div>
       <div ref={aboutRef} className="entireAbout">
         <About />
-        <div className="empty3">
+       
           <div className="arrowAnimation">
             <div className="arrow-down2" onClick={scrollDown2}></div>
-          </div>
-        </div>
-        <div ref={projectsRef}>
-          <Projects />
-
-          <div className="arrowAnimation">
-            <div className="arrow-down3" onClick={scrollDown3}></div>
-          </div>
         </div>
       </div>
-      <div ref={contactRef}>
+      <div ref={projectsRef} className="entireProject">
+        <Projects />
+
+        <div className="arrowAnimation">
+          <div className="arrow-down3" onClick={scrollDown3}></div>
+        </div>
+      </div>
+      {/*
+      <div ref={contactRef} className="entireContact">
         <Contact />{" "}
         <div className="arrowAnimation">
           <div className="arrow-down4" onClick={scrollDown4}></div>{" "}
         </div>{" "}
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

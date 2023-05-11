@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 const Projects = () => {
   return (
-    <div className="projectsWrapper">
+    <div className="entireProject">
       <Navbar />
       <div className="projects">
         <div className="codenames">

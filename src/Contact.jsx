@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 const Contact = () => {
   return (
-    <div className="contactWrapper">
+    <div className="entireContact">
       <Navbar />
       <div className="contact">
         <img src="contact.jpg" alt="stay in touch"/>
