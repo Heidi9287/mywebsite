@@ -56,7 +56,8 @@ body {
   border-top: solid black 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+  line-height: 100px;
 }
 .innerBar a {
   text-decoration: none;
@@ -89,31 +90,51 @@ body {
   grid-template-columns: 8vw 1fr;
   grid-template-areas: "nav home";
 }
-
+@keyframes arrow-bounce1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+@keyframes arrow-bounce2 {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .arrow-down {
   border: solid rgb(244, 239, 197);
-  border-width: 0 5px 5px 0;
-  left: 50%;
-  padding: 15px;
+  border-width: 0 3px 3px 0;
+  padding: 10px;
   transform: rotate(45deg);
   position: absolute;
   cursor: pointer;
 }
 .arrow-up {
   border: solid rgb(244, 239, 197);
-  border-width: 0 5px 5px 0;
-  left: 50%;
-  padding: 15px;
+  border-width: 0 3px 3px 0;
+  padding: 10px;
   transform: rotate(225deg);
   position: absolute;
   cursor: pointer;
 }
 .arrowAnimation {
-  animation: arrow-bounce 1.5s ease-in-out infinite alternate;
+  animation: arrow-bounce1 1.5s ease-in-out infinite alternate;
   z-index: 2;
   position: absolute;
-  top: 90%;
-  left: 50%;
+  top: 92%;
+  left: 48%;
+}
+.arrowAnimation2 {
+  animation: arrow-bounce2 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+  position: absolute;
+  top: 92%;
+  left: 52%;
 }
 .home {
   flex-grow: 1;
@@ -121,7 +142,7 @@ body {
   grid-area: home;
   grid-template-columns: 1fr 15%;
   grid-template-rows: 88% 12%;
-  grid-template-areas: "intro image" "empty3 empty4";
+  grid-template-areas: "intro moreToCome" "empty3 empty4";
   height: inherit;
 }
 /* @keyframes fly-in-left {
@@ -132,11 +153,26 @@ body {
     transform: translateX(0%);
   }
 } */
-.image {
+.moreToCome {
   background-color: #9bc4ca;
-  grid-area: image;
+  grid-area: moreToCome;
   border-left: solid black 5px;
+  color: rgb(244, 239, 197);
+  font-size: 25px;
 }
+.moreToComeInner .hiddenText{display: none;color:rgb(165, 70, 70)}
+
+.moreToComeInner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+}
+.moreToComeInner h4{margin:0;padding-bottom: 25%;  font-weight: 400;}
+.moreToComeInner:hover{background-color: #a8b0b2;}
+.moreToComeInner:hover .hiddenText{display: block;}
 .intro {
   /* animation-name: fly-in-left; */
   /* animation-duration: 2s;
@@ -188,15 +224,6 @@ body {
   padding-bottom: 5%;
   font-weight: 300;
 }
-@keyframes arrow-bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(30px);
-  }
-}
-
 @keyframes fly-in-top {
   from {
     transform: translateY(500%);
@@ -359,7 +386,8 @@ align-items: center;
 }
 .filler2 {
   grid-area: filler2;
-  background-color: rgb(77, 93, 120);
+  background-color: #9bc4ca;
+  border-left: solid black 5px;
 }
 .contactLeft {
   width:30%;
@@ -370,6 +398,11 @@ align-items: center;
   width:30%;
   height:22%;
 
+}
+.footer{
+  color: #9bc4ca;
+  font-size: 16px;
+  font-weight: 200;
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {
