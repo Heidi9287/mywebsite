@@ -28,12 +28,18 @@ const Home = () => {
         <div class="home" ref={homeRef}>
           <div className="empty2"></div>
           <div className="intro">
+           
+            <div  className="Heidi">
+               <img src="myPhoto.PNG" alt="HEIDI" className="heidiImage"></img>
+            
+            <div className="name"> 
             <p className="smallText1">Hi, my name is </p>
-            <h1 className="name"> Heidi Lyu</h1>
+             Heidi Lyu
+             </div>
+            </div>
             <p className="smallText2">
-              {" "}
               I am an artist turned Full Stack Programmer, a newcomer to the
-              industry. I aspire to specialize in creative front-end
+              industry. <br></br>I aspire to specialize in creative front-end
               development.
             </p>
           </div>
@@ -50,23 +56,23 @@ const Home = () => {
         <About />
        
           <div className="arrowAnimation">
-            <div className="arrow-down2" onClick={scrollDown2}></div>
+            <div className="arrow-down" onClick={scrollDown2}></div>
         </div>
       </div>
       <div ref={projectsRef} className="entireProject">
         <Projects />
 
         <div className="arrowAnimation">
-          <div className="arrow-down3" onClick={scrollDown3}></div>
+          <div className="arrow-down" onClick={scrollDown3}></div>
         </div>
       </div>
-      {/*
+      
       <div ref={contactRef} className="entireContact">
         <Contact />{" "}
         <div className="arrowAnimation">
-          <div className="arrow-down4" onClick={scrollDown4}></div>{" "}
+          <div className="arrow-up" onClick={scrollDown4}></div>{" "}
         </div>{" "}
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

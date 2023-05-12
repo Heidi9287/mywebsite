@@ -1,154 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 body {
-  background-color: #fcfcfc;
+  background-color: #f3f3ee;
   background-size: cover;
   font-family: "Raleway", sans-serif;
   height: 100%;
   width: 100vw;
   margin: 0;
-}
-.entireHome {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav home";
-}
-.home {
-  flex-grow: 1;
-  display: grid;
-  grid-area: home;
-  grid-template-columns: 1fr 15%;
-  grid-template-rows: 88% 12%;
-  grid-template-areas: "intro image" "empty3 empty4";
-  height: inherit;
-}
-/* @keyframes fly-in-left {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-} */
-.image {
-  background-color: rgb(114, 158, 194);
-  grid-area: image;
-  border-left: solid black 5px;
-}
-.empty2 {
-  background-color: rgb(141, 4, 4);
-  grid-area: empty2;
-  border-right: solid black 5px;
-  border-top: solid black 5px;
-  border-bottom: solid black 5px;
-}
-.empty3 {
-  background-color: rgb(2, 81, 145);
-  grid-area: empty3;
-  border-top: solid black 5px;
-  display: flex;
-  justify-content: center;
-  border-bottom: solid black 5px;
-}
-.empty4 {
-  /* background-color: rgb(231, 209, 13); */
-  grid-area: empty4;
-  border-top: solid black 5px;
-  border-left: solid black 5px;
-  border-bottom: solid black 5px;
-}
-.intro {
-  /* animation-name: fly-in-left; */
-  /* animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-fill-mode: both;
-*/
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  grid-area: intro;
-  justify-content: flex-end;
-  width: 80%;
-  margin-left: 15%;
-}
-.name {
-  font-size: 120px;
-  color: rgb(2, 81, 145);
   font-weight: 400;
-  margin: 0;
-  text-align: right;
-}
-.smallText1 {
-  text-align: right;
-  margin: 0;
   font-size: 30px;
-  color: rgb(141, 4, 4);
-  font-weight: 300;
-  padding-right: 20px;
-}
-.smallText2 {
-  text-align: right;
-  margin: 0;
-  font-size: 30px;
-  color: rgb(141, 4, 4);
-  font-weight: 300;
-  padding-bottom: 5%;
-}
-@keyframes arrow-bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(30px);
-  }
-}
-.arrow-down {
-  border: solid rgb(231, 209, 13);
-  border-width: 0 5px 5px 0;
-  left: 50%;
-  padding: 15px;
-  transform: rotate(45deg);
-  position: absolute;
-  cursor: pointer;
-}
-.arrowAnimation {
-  animation: arrow-bounce 1.5s ease-in-out infinite alternate;
-  z-index: 2;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-}
-
-.arrow-down2 {
-  border: solid rgb(231, 209, 13);
-  border-width: 0 5px 5px 0;
-  left: 50%;
-  padding: 15px;
-  transform: rotate(45deg);
-  position: absolute;
-  cursor: pointer;
-}
-.arrow-down3 {
-  border: solid rgb(96, 11, 11);
-  border-width: 0 3px 3px 0;
-  left: 50%;
-  padding: 10px;
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: 30px;
-  cursor: pointer;
-}
-.arrow-down4 {
-  border: solid rgb(96, 11, 11);
-  border-width: 0 3px 3px 0;
-  left: 50%;
-  padding: 10px;
-  transform: rotate(225deg);
-  position: absolute;
-  bottom: 30px;
-  cursor: pointer;
 }
 .navbar {
   font-weight: 400;
@@ -180,17 +40,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(231, 209, 13);
+  background-color: rgb(244, 239, 197);
 }
 .firstItem a {
   text-decoration: none;
-  color: rgb(2, 81, 145)
+  color: #5e848a;
 }
+
 .innerBar {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  /* background-color: rgb(141, 4, 4); */
   grid-area: directory;
   border-right: solid black 5px;
   border-top: solid black 5px;
@@ -200,20 +60,141 @@ body {
 }
 .innerBar a {
   text-decoration: none;
-  color: rgb(141, 4, 4);
-
+  color: rgb(165, 70, 70);
 }
 .empty1 {
-  background-color: rgb(141, 4, 4);
+  background-color: rgb(165, 70, 70);
   border-right: solid black 5px;
   border-top: solid black 5px;
   border-bottom: solid black 5px;
   grid-area: empty1;
 }
-.footer {
-  grid-area: footer;
-  text-align: center;
-  color: rgb(141, 4, 4);
+.empty3 {
+  background-color: #9bc4ca;
+  grid-area: empty3;
+  border-top: solid black 5px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid black 5px;
+}
+.empty4 {
+  grid-area: empty4;
+  border-top: solid black 5px;
+  border-left: solid black 5px;
+  border-bottom: solid black 5px;
+}
+.entireHome {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8vw 1fr;
+  grid-template-areas: "nav home";
+}
+
+.arrow-down {
+  border: solid rgb(244, 239, 197);
+  border-width: 0 5px 5px 0;
+  left: 50%;
+  padding: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  cursor: pointer;
+}
+.arrow-up {
+  border: solid rgb(244, 239, 197);
+  border-width: 0 5px 5px 0;
+  left: 50%;
+  padding: 15px;
+  transform: rotate(225deg);
+  position: absolute;
+  cursor: pointer;
+}
+.arrowAnimation {
+  animation: arrow-bounce 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+.home {
+  flex-grow: 1;
+  display: grid;
+  grid-area: home;
+  grid-template-columns: 1fr 15%;
+  grid-template-rows: 88% 12%;
+  grid-template-areas: "intro image" "empty3 empty4";
+  height: inherit;
+}
+/* @keyframes fly-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+} */
+.image {
+  background-color: #9bc4ca;
+  grid-area: image;
+  border-left: solid black 5px;
+}
+.intro {
+  /* animation-name: fly-in-left; */
+  /* animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-area: intro;
+  justify-content: flex-end;
+  width: 80%;
+  margin-left: 15%;
+}
+.Heidi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "heidi smallText1" "heidi name";
+}
+.heidiImage {
+  grid-area: heidi;
+  width: 70%;
+  justify-self: end;
+}
+.name {
+  font-size: 120px;
+  color: #9bc4ca;
+  margin: 0;
+  text-align: right;
+  font-weight: 500;
+  grid-area: name;
+  align-self: flex-end;
+}
+.smallText1 {
+  grid-area: smallText1;
+  text-align: right;
+  margin: 0;
+  font-size: 25px;
+  color: rgb(165, 70, 70);
+  padding-right: 20px;
+  font-weight: 300;
+}
+.smallText2 {
+  text-align: right;
+  margin: 0;
+  color: rgb(165, 70, 70);
+  padding-bottom: 5%;
+  font-weight: 300;
+}
+@keyframes arrow-bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(30px);
+  }
 }
 
 @keyframes fly-in-top {
@@ -238,27 +219,39 @@ body {
   grid-template-columns: 1fr 15%;
   grid-template-rows: 1fr 12%;
   width: 92vw;
-  color: rgb(2, 81, 145);
-  font-weight: 300;
-  grid-template-areas: 'aboutContent more' "empty3 empty4";
+  color: #5e848a;
+  font-weight: 400;
+  grid-template-areas: "aboutContent more" "empty3 empty4";
 }
 .aboutContent {
   box-sizing: border-box;
   font-size: 20px;
   padding: 3% 10%;
-  grid-area: school;
   margin: 0;
   grid-area: aboutContent;
-  list-style-type:none;
-
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.aboutContent li{  text-indent: 25px; line-height: 30px;
+.schools {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: space-evenly;
+}
+.breakUpFlexBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  line-height: 30px;
 }
 .more {
   grid-area: more;
-  text-align: center;
-  background-color: rgb(231, 209, 13);
+  background-color: rgb(244, 239, 197);
   margin: 0;
+  border-left: solid black 5px;
 }
 .entireProject {
   height: 100vh;
@@ -269,60 +262,57 @@ body {
   grid-template-areas: "nav project";
 }
 .projects img {
-  width: 22vw;
+  width: 20vw;
 }
 .projects {
+  color: #5e848a;
+
+  font-weight: 400;
   grid-area: project;
-  display: flex;
-  padding-top: 2%;
-  animation-name: fly-in-left;
+  display: grid;
+  grid-template-columns: 1fr 15%;
+  grid-template-rows: 1fr 12%;
+  grid-template-areas:  "projectFlexBox filler" " empty3  empty4";
+  width: 92vw;
+  /* animation-name: fly-in-left;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
-  animation-fill-mode: both;
-  overflow-y: auto;
+  animation-fill-mode: both; */
+  /* overflow-y: auto; */
 }
 .projects a {
   color: inherit;
 }
 .projectContent {
-  width: 20vw;
   font-size: 18px;
-  text-align: left;
-  align-self: center;
-  padding-bottom: 1vh;
-  line-height: 21px;
-  font-family: "Lora", serif;
+  line-height: 36px;
+}
+.projectFlexBox{
+  grid-area: projectFlexBox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  width: 75%;
 }
 
-.codenames {
-  border-right: solid 1px white;
-  color: rgb(123, 20, 20);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.shopper {
-  border-right: solid 1px white;
-  color: rgb(123, 20, 20);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.moreProject {
+  grid-area: moreProject;
+  font-size: 30px;
+  color: rgb(165, 70, 70);
+  margin: 0;
+  font-weight: 400;
 }
 .projectTitle {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
+  font-weight: 400;
 }
 .filler {
-  font-size: 80px;
-  color: rgb(123, 20, 2);
-  display: flex;
-  align-items: self-end;
-  width: 50%;
-  margin: 0 auto;
-  padding-bottom: 15vh;
+  background-color: rgb(165, 70, 70);
+  grid-area: filler;
+  border-left: solid black 5px;
 }
 .entireContact {
   position: relative;
@@ -330,41 +320,56 @@ body {
   background-size: cover;
   margin: 0;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 8vw 1fr;
+  grid-template-areas: "nav contact";
 }
 .contact {
   overflow-y: auto;
   grid-area: contact;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  animation-name: fly-in-left;
+  display: grid;
+  width: 92vw;
+  grid-template-columns: 1fr 15%;
+  grid-template-rows: 1fr 12%;
+  color:#5e848a;
+  grid-template-areas: "contactFlexBox filler2" " empty3 empty4";
+  /* animation-name: fly-in-left;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
-  animation-fill-mode: both;
+  animation-fill-mode: both; */
 }
-.contactContent {
-  width: 40%;
+.contactFlexBox{
+  grid-area: contactFlexBox;
+  display: flex;
+  justify-content: space-between;
 }
+.methods h1{font-size: 50px;}
 .methods {
-  margin-left: 5%;
-  color: white;
+font-size: 18px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+line-height: 0;
+align-items: center;
 }
+
 .methods a {
   color: inherit;
 }
-.stay {
-  margin: 0 0 0 5%;
-  font-size: 130px;
-  color: white;
+.filler2 {
+  grid-area: filler2;
+  background-color: rgb(77, 93, 120);
 }
-.inTouch {
-  margin: 0px 0 0 5%;
-  font-size: 100px;
-  color: rgb(209 168 116);
+.contactLeft {
+  width:30%;
+  height:22%;
+  align-self: flex-end;
 }
-.contact img {
-  width: 60%;
+.contactRight {
+  width:30%;
+  height:22%;
+
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {

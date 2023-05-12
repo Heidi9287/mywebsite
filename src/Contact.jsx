@@ -5,13 +5,12 @@ const Contact = () => {
     <div className="entireContact">
       <Navbar />
       <div className="contact">
-        <img src="contact.jpg" alt="stay in touch"/>
-        <div className="contactContent">
-          <h1 className="stay">Let's stay</h1>{" "}
-          <h1 className="inTouch">
-            in touch
-          </h1>
+        <div className="contactFlexBox">
+        <img src="contactLeft.png" alt="stay in touch" className="contactLeft"/>
+          
           <div className="methods">
+          <h1>Let's stay in touch 
+          </h1>
             <p>LYU9287@GMAIL.COM</p>
 
             <p>
@@ -26,7 +25,12 @@ const Contact = () => {
               <a href="https://www.instagram.com/byheidi_/">Instagram</a>
             </p>
           </div>
-        </div>{" "}
+         
+          <img src="contactRight.png" alt="stay in touch" className="contactRight" />
+          </div>
+       <div className="filler2"></div>
+        <div className="empty3"></div>
+        <div className="empty4"></div>
       </div>
     </div>
   );
