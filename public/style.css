@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-weight: 400;
   font-size: 30px;
+  overflow-x: hidden;
 }
 .navbar {
   font-weight: 400;
@@ -84,12 +85,6 @@ body {
   border-left: solid black 5px;
   border-bottom: solid black 5px;
 }
-.entireHome {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav home";
-}
 @keyframes arrow-bounce1 {
   from {
     transform: translateY(0px);
@@ -135,6 +130,12 @@ body {
   position: absolute;
   top: 92%;
   left: 52%;
+}
+.entireHome {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8vw 1fr;
+  grid-template-areas: "nav home";
 }
 .home {
   flex-grow: 1;
@@ -306,7 +307,6 @@ body {
   animation-timing-function: ease-out;
   animation-delay: 0s;
   animation-fill-mode: both; */
-  /* overflow-y: auto; */
 }
 .projects a {
   color: inherit;
