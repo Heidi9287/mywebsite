@@ -50,11 +50,11 @@ const Home = () => {
           </div>
           <div className="moreToCome">
           <div className="moreToComeInner">
-            <h4>PHOTOGRAPHY</h4>
+            <p>PHOTOGRAPHY</p>
           <p className="hiddenText">not open yet</p>
           </div>
           <div className="moreToComeInner">
-        <h4>PAINTING</h4> 
+        <p>PAINTING</p> 
             <p className="hiddenText">not open yet</p>
           </div>
           </div>
