@@ -44,7 +44,7 @@ const Home = () => {
             </p>
           </div>
           <div className="empty3">
-            <div className="arrowAnimation">
+            <div className="arrowAnimation2">
               <div className="arrow-down" onClick={scrollDown1}></div>
             </div>
           </div>

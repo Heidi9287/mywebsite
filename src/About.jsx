@@ -7,7 +7,7 @@ const About = () => {
       <Navbar />
       <div className="about">
         <ul className="aboutContent">
-          <p style={{fontWeight:'500',fontSize:'30px',margin:'0 0 1% 0'}}>EDUCATION</p>
+          <p className="education">EDUCATION</p>
           <div className="schools">
           <li>Fullstack Academy - Web Development and Software Engineer</li>
           <li> New York University – M. A in Visual Art Administration</li>
@@ -16,7 +16,7 @@ const About = () => {
             Communication Design
           </li>
           </div>
-          <p style={{fontWeight:'500',fontSize:'30px',margin:'2% 0'}}>TECH STACKS</p>
+          <p className="techStack">TECH STACKS</p>
           <div className="breakUpFlexBox">
           <div className="breakUp">
           <li>HTML</li>
@@ -35,13 +35,9 @@ const About = () => {
           <li>Firebase</li></div>
           </div>
           <p
-            style={{
-              fontSize: "30px",
-              fontWeight: "400px",
-              color: "rgb(165, 70, 70)",
-            }}
+       className="aboutFooter"
           >
-            {" "}
+            
             more about my professional expeirences can be found{" "}
             <a
               href="https://www.linkedin.com/in/heidilyu/"
