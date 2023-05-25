@@ -11,8 +11,8 @@ const Projects = () => {
             <h1 className="projectTitle">
               <a href="https://codenames-0nt7.onrender.com/">CODENAMES</a>
             </h1>
-            <p style={{ margin: "0" ,fontSize:'18px'}}>Design and Devlopement </p>
-            <p style={{ margin: "0", fontSize:'18px'}}>
+            <p className="secondTitle">Design and Devlopement </p>
+            <p className="secondTitle">
               <a href="https://github.com/2208-Capstone-Team-2/codenames">
                 Github
               </a>
@@ -33,8 +33,8 @@ const Projects = () => {
                 GRACE SHOPPER
               </a>
             </h1>
-            <p style={{ margin: "0",fontSize:'18px' }}>Design and Devlopement </p>
-            <p style={{ margin: "0",fontSize:'18px' }}>
+            <p className="secondTitle">Design and Devlopement </p>
+            <p className="secondTitle">
               <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">
                 Github
               </a>

@@ -315,6 +315,7 @@ body {
   margin: 0;
   font-weight: 400;
 }
+.secondTitle{font-size: 18px;margin:0;}
 .filler {
   background-color: rgb(165, 70, 70);
   grid-area: filler;
@@ -564,12 +565,14 @@ body {
   }
   .filler{border-top:solid black 3px;border-bottom: solid black 3px;border-left:none;}
   .projectTitle a{
-   font-size: 22px;
+   font-size: 18px;
   }
   .projectContent {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 20px;
+    margin:0;
   }
+  .secondTitle{font-size: 16px;}
 .moreProject{font-size: 18px;}
 }
 
@@ -590,10 +593,10 @@ body {
   justify-content: space-between;
 }
 .methods h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .methods {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -603,10 +606,6 @@ body {
 
 .methods a {
   color: inherit;
-}
-
-.methods h1 {
-  font-size: 30px;
 }
 .filler2 {
   background-color: rgb(165, 70, 70);
