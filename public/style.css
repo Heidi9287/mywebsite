@@ -208,21 +208,20 @@ body {
   font-weight: 300;
 }
 .entireAbout {
-  height: 100vh;
   position: relative;
   z-index: 1;
   display: grid;
   grid-template-columns: 8vw 1fr;
   grid-template-areas: "nav about";
 }
-.about {
+.about { height: 100vh;
   grid-area: about;
   display: grid;
   grid-template-columns: 1fr 15%;
   grid-template-rows: 1fr 12%;
-  width: 92vw;
   color: #5e848a;
   font-weight: 400;
+  width: 92vw;
   grid-template-areas: "aboutContent more" "empty3 empty4";
 }
 .aboutContent {
@@ -331,7 +330,7 @@ body {
   grid-template-columns: 8vw 1fr;
   grid-template-areas: "nav contact";
 }
-.contact {
+.contact {  height: 100vh;
   overflow-y: auto;
   grid-area: contact;
   display: grid;
@@ -347,7 +346,7 @@ body {
   justify-content: space-between;
 }
 .methods h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .methods {
   font-size: 18px;
@@ -574,7 +573,6 @@ body {
   }
   .secondTitle{font-size: 16px;}
 .moreProject{font-size: 18px;}
-}
 
 .entireContact {
   grid-template-rows: 10vh 1fr;
@@ -645,12 +643,6 @@ body {
   }
   .AboutTitle {
     font-size: 50px;
-  }
-  .about {
-    font-size: 16px;
-    line-height: 18px;
-    width: 90vw;
-    margin: auto;
   }
   .cvTitle {
     font-size: 18px;
