@@ -18,6 +18,8 @@ body {
   display: grid;
   grid-template-rows: 5% 1fr 12%;
   grid-template-areas: "name" "directory" "empty1";
+  min-height: 600px;
+  height: 100vh;
 }
 
 .firstItem {
@@ -117,10 +119,11 @@ body {
   left: 52%;
 }
 .entireHome {
-  height: 100vh;
   display: grid;
   grid-template-columns: 8vw 1fr;
   grid-template-areas: "nav home";
+  z-index: 1;
+  position: relative;
 }
 .home {
   display: grid;
@@ -215,7 +218,6 @@ body {
   grid-template-areas: "nav about";
 }
 .about {
-  height: 100vh;
   grid-area: about;
   display: grid;
   grid-template-columns: 1fr 15%;
@@ -270,7 +272,6 @@ body {
   border-left: solid black 5px;
 }
 .entireProject {
-  height: 100vh;
   position: relative;
   z-index: 1;
   display: grid;
@@ -329,14 +330,12 @@ body {
   z-index: 1;
   background-size: cover;
   margin: 0;
-  height: 100vh;
   display: grid;
   grid-template-columns: 8vw 1fr;
   grid-template-areas: "nav contact";
 }
 .contact {
-  height: 100vh;
-  overflow-y: auto;
+overflow-y: auto;
   grid-area: contact;
   display: grid;
   width: 92vw;
@@ -378,13 +377,6 @@ body {
 .contactRight {
   width: 30%;
   height: 22%;
-}
-.footer {
-  color: #9bc4ca;
-  font-size: 16px;
-  font-weight: 200;
-  display: flex;
-  justify-content: center;
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {

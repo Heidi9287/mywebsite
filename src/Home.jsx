@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Footer from "./Footer";
 import About from "./About";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -26,16 +25,14 @@ const Home = () => {
       <div className="entireHome">
         <Navbar />
         <div class="home" ref={homeRef}>
-          <div className="empty2"></div>
           <div className="intro">
-           
-            <div  className="Heidi">
-               <img src="myPhoto.PNG" alt="HEIDI" className="heidiImage"></img>
-            
-            <div className="name"> 
-            <p className="smallText1">Hi, my name is </p>
-             Heidi Lyu
-             </div>
+            <div className="Heidi">
+              <img src="myPhoto.PNG" alt="HEIDI" className="heidiImage"></img>
+
+              <div className="name">
+                <p className="smallText1">Hi, my name is </p>
+                Heidi Lyu
+              </div>
             </div>
             <p className="smallText2">
               I am an artist turned Full Stack Programmer, a newcomer to the
@@ -49,14 +46,14 @@ const Home = () => {
             </div>
           </div>
           <div className="moreToCome">
-          <div className="moreToComeInner">
-            <p>PHOTOGRAPHY</p>
-          <p className="hiddenText">not open yet</p>
-          </div>
-          <div className="moreToComeInner">
-        <p>PAINTING</p> 
-            <p className="hiddenText">not open yet</p>
-          </div>
+            <div className="moreToComeInner">
+              <p>PHOTOGRAPHY</p>
+              <p className="hiddenText">not open yet</p>
+            </div>
+            <div className="moreToComeInner">
+              <p>PAINTING</p>
+              <p className="hiddenText">not open yet</p>
+            </div>
           </div>
           <div className="empty4"></div>
         </div>
@@ -66,8 +63,8 @@ const Home = () => {
         <div className="arrowAnimation">
           <div className="arrow-up" onClick={scrollDown4}></div>
         </div>
-          <div className="arrowAnimation2">
-            <div className="arrow-down" onClick={scrollDown2}></div>
+        <div className="arrowAnimation2">
+          <div className="arrow-down" onClick={scrollDown2}></div>
         </div>
       </div>
       <div ref={projectsRef} className="entireProject">
@@ -76,18 +73,17 @@ const Home = () => {
         <div className="arrowAnimation">
           <div className="arrow-up" onClick={scrollDown1}></div>
         </div>
-          <div className="arrowAnimation2">
-            <div className="arrow-down" onClick={scrollDown3}></div>
+        <div className="arrowAnimation2">
+          <div className="arrow-down" onClick={scrollDown3}></div>
         </div>
       </div>
-      
+
       <div ref={contactRef} className="entireContact">
         <Contact />
         <div className="arrowAnimation">
           <div className="arrow-up" onClick={scrollDown4}></div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
