@@ -64,7 +64,7 @@ const Projects = () => {
         <p className="secondTitle">
           <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">Github</a>
         </p>
-    </div>
+        card game</div>
     </div>
   );
 };

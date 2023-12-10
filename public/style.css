@@ -128,32 +128,34 @@ body {
   grid-area: cvPageTitle;
   font-size: 108px;
   color: #0f0892;
-  top:8%;
-  right:8%;
-  position:fixed;
+  top: 8%;
+  right: 8%;
+  position: fixed;
 }
 .education {
   grid-area: education;
   padding: 5% 0 0 15%;
 }
-.education li{
+.education li {
   padding-top: 5%;
 }
 .techStack {
   grid-area: techStack;
   padding: 5% 0 0 15%;
 }
-.techList{
+.techList {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
 }
-.techList li{
-  width: calc(33.33% - 10px); /* Adjust the width as needed, considering margins or paddings */
+.techList li {
+  width: calc(
+    33.33% - 10px
+  ); /* Adjust the width as needed, considering margins or paddings */
   margin: 5px; /* Adjust the margin as needed */
   box-sizing: border-box;
 }
-.aboutFooter{
+.aboutFooter {
   grid-area: aboutFooter;
   padding: 0 0 0 15%;
 }
@@ -172,15 +174,15 @@ body {
     "contactLeft contactPageTitle"
     "method contactRight";
   grid-template-columns: 1fr 35%;
-  grid-template-rows:  1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-.contactPageTitle{
+.contactPageTitle {
   grid-area: contactPageTitle;
   font-size: 88px;
   color: #0f0892;
-  top:8%;
-  right:8%;
-  position:fixed;
+  top: 8%;
+  right: 8%;
+  position: fixed;
 }
 .methods {
   font-size: 18px;
@@ -197,196 +199,115 @@ body {
   color: inherit;
 }
 .contactLeft {
-height: 50%;
- grid-area: contactLeft;
- padding:10% 0 0 0;
+  height: 50%;
+  grid-area: contactLeft;
+  padding: 10% 0 0 0;
 }
 .contactRight {
-  grid-area:contactRight;
- justify-self: right;
- align-self: flex-end;
- height: 60%;
+  grid-area: contactRight;
+  justify-self: right;
+  align-self: flex-end;
+  height: 60%;
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {
-  .entireHome {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "home";
+  .projects {
+    grid-area: projects;
+    display: block;
   }
-  .home {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "intro intro" "moreToCome empty4";
+  .projectPageTitle {
+    font-size: 28px;
+    position: inherit;
+    top: auto;
+    right: auto;
+    margin: 100px auto 0;
+    display: block;
+    width: fit-content;
   }
-
-  .moreToCome {
-    display: flex;
-    flex-direction: row;
-    border-left: none;
-    justify-content: space-around;
-    border-bottom: solid black 3px;
-    border-top: solid black 3px;
-    color: rgb(244, 239, 197);
-    background-color: rgb(165, 70, 70);
-  }
-  .moreToComeInner p {
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  .moreToComeInner {
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    height: auto;
-  }
-  .intro {
+  .navbar {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    margin: auto 2%;
+    align-items: flex-end;
+    width: 50%;
+    margin-right: 5%;
   }
-
-  .heidiImage {
-    grid-area: heidi;
-    width: 100%;
-    justify-self: end;
-  }
-
-  .smallText1 {
-    text-align: right;
-    margin: 0;
-    font-size: 16px;
-    padding-right: 5%;
-  }
-  .smallText2 {
-    text-align: center;
-    margin: 0;
-    width: 90%;
-    align-self: center;
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .arrowAnimation2 {
-    top: 95%;
-    left: auto;
-    right: 18%;
-  }
-  .arrowAnimation {
-    top: 96%;
-    left: auto;
-    right: 10%;
-  }
-  .arrow-down {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(45deg);
-    position: absolute;
-    cursor: pointer;
-  }
-  .arrow-up {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(225deg);
-  }
-  .education {
-    font-size: 25px;
-  }
-  .techStack {
-    font-size: 25px;
-  }
-  .aboutFooter {
-    font-size: 16px;
-  }
-  .more {
-    grid-area: more;
-    background-color: rgb(165, 70, 70);
-    margin: 0;
-    border-left: none;
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-  .skills {
+  .navbar a {
+    margin: 2% 5%;
     font-size: 12px;
-    margin: 0;
-    padding: 0px 2px;
-    list-style: none;
+    color: inherit;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .introduction {
+    font-size: 12px;
   }
 
-  .projects {
-    width: auto;
+  .projectImage {
+    width: 80%;
   }
-  .filler {
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-    border-left: none;
+  .projectTitle {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 400;
   }
-  .projectTitle a {
-    font-size: 16px;
+  .secondTitle {
+    font-size: 12px;
   }
   .projectContent {
     font-size: 12px;
-    line-height: 20px;
-    margin: 0;
+    line-height: 18px;
     width: 90%;
   }
-  .secondTitle {
-    font-size: 14px;
+
+  .aboutContent {
+    grid-area: aboutContent;
+    display: block;
   }
-  .moreProject {
-    font-size: 16px;
+  .cvPageTitle {
+    font-size: 28px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 130px auto 0;
+    display: block;
+    width: fit-content;
+  }
+  .education {
+    font-size: 12px;
+    padding:2% 0 0 5%;
+  }
+  .techStack {
+    font-size: 12px;
+    padding:2% 0 0 5%;
+  }
+  .techList{
+    padding:2% 0 0 5%;
+  }
+  .aboutFooter {
+    font-size: 10px;
+    padding:2% 0 0 5%;
+  }
+  .contactContent {
+    grid-area: contactContent;
+    width: 100%;
+    display: block;
+  }
+  .contactLeft{width:40%;height:20%;}
+  .contactRight{width:40%;height:20%;margin-left: 60%;}
+  .methods{font-size: 14px;
+  margin-left: 30%;}
+  .contactPageTitle {
+    font-size: 28px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 130px auto 0;
+    display: block;
+    width: fit-content;
   }
 
-  .entireContact {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "contact";
-    height: 100vh;
-  }
-  .contact {
-    width: 100vw;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "contactFlexBox contactFlexBox" "filler2 empty4";
-  }
-  .contactFlexBox {
-    grid-area: contactFlexBox;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-  }
-  .methods h1 {
-    font-size: 20px;
-  }
-  .methods {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 0;
-    align-items: center;
-  }
-
-  .methods a {
-    color: inherit;
-  }
-  .filler2 {
-    background-color: rgb(165, 70, 70);
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-    border-left: none;
-  }
-  .contactLeft {
-    width: 25%;
-    height: 12%;
-  }
-  .contactRight {
-    width: 25%;
-    height: 12%;
-  }
 }
 /*--------------------------------------600px - 800px------------------------------------*/
 @media screen and (min-width: 600px) and (max-width: 800px) {
