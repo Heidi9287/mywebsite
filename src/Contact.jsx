@@ -7,6 +7,7 @@ const Contact = () => {
         <div className="contactContent">
         <h2 className="contactPageTitle"> Contact
           </h2>
+          <div className="contactBlock">
         <img src="contactLeft.png" alt="stay in touch" className="contactLeft"/>
           
           <div className="methods">
@@ -27,7 +28,7 @@ const Contact = () => {
          
           <img src="contactRight.png" alt="stay in touch" className="contactRight" />
           </div>
-  
+          </div>
       </div>
 
   );

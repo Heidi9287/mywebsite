@@ -8,7 +8,7 @@ const About = () => {
         <h1 className="cvPageTitle">About</h1>
         <div className="education">
           <h2>EDUCATION</h2>
-          <li>Fullstack Academy Web Development and Software Engineer</li>
+          <li>Fullstack Academy - Web Development and Software Engineer</li>
           <li> New York University – M. A in Visual Art Administration</li>
           <li>
             Xi’an International Studies University – B. A in Visual

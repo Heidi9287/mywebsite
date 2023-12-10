@@ -56,7 +56,7 @@ body {
 .projects {
   grid-area: projects;
   display: grid;
-  grid-template-columns: 1fr 35%;
+  grid-template-columns: 1fr 25%;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "codenames projectPageTitle"
@@ -70,6 +70,9 @@ body {
   position: fixed;
   top: 8%; /* Fixed to the top of the viewport */
   right: 8%;
+  border-left: solid 1px #0f0892;
+  height: 100%;
+  width:17%;
 }
 .projects a {
   color: inherit;
@@ -121,7 +124,7 @@ body {
     "education cvPageTitle"
     "techStack cvPageTitle"
     "aboutFooter cvPageTitle";
-  grid-template-columns: 1fr 35%;
+  grid-template-columns: 1fr 25%;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .cvPageTitle {
@@ -131,6 +134,9 @@ body {
   top: 8%;
   right: 8%;
   position: fixed;
+  border-left: solid 1px #0f0892;
+  height: 100%;
+  width: 17%;
 }
 .education {
   grid-area: education;
@@ -171,18 +177,28 @@ body {
   width: 100%;
   display: grid;
   grid-template-areas:
-    "contactLeft contactPageTitle"
-    "method contactRight";
-  grid-template-columns: 1fr 35%;
-  grid-template-rows: 1fr 1fr;
+    "contactBlock contactPageTitle";
+  grid-template-columns: 1fr 25%;
+
 }
 .contactPageTitle {
   grid-area: contactPageTitle;
-  font-size: 88px;
+  font-size: 108px;
   color: #0f0892;
   top: 8%;
   right: 8%;
   position: fixed;
+  border-left: solid 1px #0f0892;
+  height: 100%;
+  width:17%;
+}
+.contactBlock{
+  grid-area: contactBlock;
+  padding:5% 0 0 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: space-evenly;
 }
 .methods {
   font-size: 18px;
@@ -191,23 +207,17 @@ body {
   line-height: 0;
   align-items: center;
   grid-area: method;
-  width: 50%;
-  margin-left: 50%;
 }
 
 .methods a {
   color: inherit;
 }
 .contactLeft {
-  height: 50%;
-  grid-area: contactLeft;
-  padding: 10% 0 0 0;
+width: 30%;
 }
 .contactRight {
-  grid-area: contactRight;
-  justify-self: right;
+  width: 30%;
   align-self: flex-end;
-  height: 60%;
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {
@@ -223,6 +233,8 @@ body {
     margin: 100px auto 0;
     display: block;
     width: fit-content;
+    border:none;
+    height: fit-content;
   }
   .navbar {
     margin: auto;
@@ -243,14 +255,8 @@ body {
   .introduction {
     font-size: 12px;
   }
-
-  .projectImage {
-    width: 80%;
-  }
   .projectTitle {
-    font-size: 14px;
-    margin: 0;
-    font-weight: 400;
+    font-size: 16px;
   }
   .secondTitle {
     font-size: 12px;
@@ -273,31 +279,43 @@ body {
     margin: 130px auto 0;
     display: block;
     width: fit-content;
+    border:none;
+    height: fit-content;
   }
   .education {
     font-size: 12px;
-    padding:2% 0 0 5%;
+    padding: 2% 0 0 5%;
   }
   .techStack {
     font-size: 12px;
-    padding:2% 0 0 5%;
+    padding: 2% 0 0 5%;
   }
-  .techList{
-    padding:2% 0 0 5%;
+  .techList {
+    padding: 2% 0 0 5%;
   }
   .aboutFooter {
     font-size: 10px;
-    padding:2% 0 0 5%;
+    padding: 2% 0 0 5%;
   }
   .contactContent {
     grid-area: contactContent;
     width: 100%;
     display: block;
   }
-  .contactLeft{width:40%;height:20%;}
-  .contactRight{width:40%;height:20%;margin-left: 60%;}
-  .methods{font-size: 14px;
-  margin-left: 30%;}
+  .contactLeft {
+    width: 40%;
+    height: 20%;
+  }
+  .contactRight {
+    width: 40%;
+    height: 20%;
+    margin-left: 60%;
+    
+  }
+  .methods {
+    font-size: 14px;
+    margin-left: 30%;
+  }
   .contactPageTitle {
     font-size: 28px;
     position: relative;
@@ -306,145 +324,73 @@ body {
     margin: 130px auto 0;
     display: block;
     width: fit-content;
+    border:none;
+    height: fit-content;
   }
-
 }
-/*--------------------------------------600px - 800px------------------------------------*/
-@media screen and (min-width: 600px) and (max-width: 800px) {
-  .firstItem {
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-
-  .innerBar {
-    flex-direction: row;
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-    border-top: none;
-    justify-content: space-around;
-    line-height: 0;
-  }
-  .empty1 {
-    border-right: none;
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty3 {
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty4 {
-    background-color: #9bc4ca;
-    border-top: solid black 3px;
-    border-left: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-  .moreToCome {
-    display: flex;
-    flex-direction: row;
-    border-left: none;
-    justify-content: space-around;
-    border-bottom: solid black 3px;
-    border-top: solid black 3px;
-    color: rgb(244, 239, 197);
-    background-color: rgb(165, 70, 70);
-  }
-  .moreToComeInner p {
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  .moreToComeInner {
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    height: auto;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    margin: auto 2%;
-  }
-
-  .smallText1 {
-    text-align: right;
-    margin: 0;
+/*--------------------------------------601px - 1250px------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  .name {
     font-size: 20px;
-    padding-right: 5%;
+    width: 20%;
   }
-  .smallText2 {
-    text-align: center;
-    margin: 0;
-    width: 90%;
-    align-self: center;
-    font-size: 20px;
-    font-weight: 200;
+  .introduction {
+    font-size: 14px;
+    width: 30%;
   }
-
-  .arrowAnimation2 {
-    top: 95%;
-    left: auto;
-    right: 18%;
+  .navbar {
+    width: 40%;
+    justify-content: right;
   }
-  .arrowAnimation {
-    top: 96%;
-    left: auto;
-    right: 10%;
+  .navbar a {
+    font-size: 16px;
   }
-  .arrow-down {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(45deg);
-    position: absolute;
-    cursor: pointer;
+  .projectPageTitle {
+    font-size: 68px;
+    top: 15%;
+    right: 5%;
   }
-  .arrow-up {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(225deg);
+  .codenames{
+    padding: 10% 0 0 10%;;
   }
-  .entireAbout {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "about";
-    height: 100vh;
+  .graceshopper{
+    padding: 10% 0 0 10%;;
   }
-  .more {
-    grid-area: more;
-    background-color: rgb(165, 70, 70);
-    margin: 0;
-    border-left: none;
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
+  .cardGame{
+    padding: 10% 0 0 10%;;
   }
-  .projectContent {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-    width: 90%;
+  .projectTitle {
+    font-size: 24px;
   }
   .secondTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
-  .moreProject {
-    font-size: 20px;
-  }
+.projectContent{
+  font-size: 16px;
+}
+.cvPageTitle{
+  font-size: 68px;
+    top: 15%;
+    right: 5%;
+}
 
-  .entireContact {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "contact";
-    height: 100vh;
-  }
-  .contact {
-    width: 100vw;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "contactFlexBox contactFlexBox" "filler2 empty4";
-  }
+.education{
+  font-size: 16px;
+  padding: 25% 0 0 10%;
+  width: 70%;
+}
+.education h2{
+  margin: 0;
+}
+.techStack{
+  font-size: 16px;
+  padding: 5% 0 0 10%;
+}
+
+.aboutFooter {
+  font-size: 14px;
+  padding: 5% 0 0 10%;
+}
   .contactFlexBox {
     grid-area: contactFlexBox;
     display: flex;
@@ -480,208 +426,5 @@ body {
   .contactRight {
     width: 25%;
     height: 12%;
-  }
-}
-/*--------------------------------------800px - 1250px------------------------------------*/
-@media screen and (min-width: 800px) and (max-width: 1250px) {
-  .firstItem {
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-  .innerBar {
-    flex-direction: row;
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-    border-top: none;
-    justify-content: space-around;
-    line-height: 0;
-  }
-  .empty1 {
-    border-right: none;
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty3 {
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty4 {
-    background-color: #9bc4ca;
-    border-top: solid black 3px;
-    border-left: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-  .moreToCome {
-    display: flex;
-    flex-direction: row;
-    border-left: none;
-    justify-content: space-around;
-    border-bottom: solid black 3px;
-    border-top: solid black 3px;
-    color: rgb(244, 239, 197);
-    background-color: rgb(165, 70, 70);
-  }
-  .moreToComeInner p {
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  .moreToComeInner {
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    height: auto;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    margin: auto 2%;
-  }
-  .smallText1 {
-    text-align: right;
-    margin: 0;
-    font-size: 20px;
-    padding-right: 5%;
-  }
-  .smallText2 {
-    text-align: center;
-    margin: 0;
-    width: 90%;
-    align-self: center;
-    font-size: 20px;
-    font-weight: 200;
-  }
-
-  .arrowAnimation2 {
-    top: 95%;
-    left: auto;
-    right: 18%;
-  }
-  .arrowAnimation {
-    top: 96%;
-    left: auto;
-    right: 10%;
-  }
-  .arrow-down {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(45deg);
-    position: absolute;
-    cursor: pointer;
-  }
-  .arrow-up {
-    border-width: 0 2px 2px 0;
-    padding: 5px;
-    transform: rotate(225deg);
-  }
-  .entireAbout {
-    grid-template-rows: 8vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "about";
-    height: 100vh;
-  }
-  .more {
-    grid-area: more;
-    background-color: rgb(165, 70, 70);
-    margin: 0;
-    border-left: none;
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-  }
-  .entireProject {
-    grid-template-rows: 8vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "project";
-    height: 100vh;
-  }
-  .projectFlexBox {
-    justify-content: space-around;
-    width: 100%;
-  }
-  .projects {
-    width: auto;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 1fr 5vh;
-    grid-template-areas: "projectFlexBox projectFlexBox" "filler empty4";
-  }
-  .projectContent {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-    width: 90%;
-  }
-  .secondTitle {
-    font-size: 20px;
-  }
-  .moreProject {
-    font-size: 20px;
-  }
-
-  .entireContact {
-    grid-template-rows: 8vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "contact";
-    height: 100vh;
-  }
-  .contact {
-    width: 100vw;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "contactFlexBox contactFlexBox" "filler2 empty4";
-  }
-  .contactFlexBox {
-    grid-area: contactFlexBox;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-  }
-  .methods h1 {
-    font-size: 20px;
-  }
-  .methods {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 0;
-    align-items: center;
-  }
-
-  .methods a {
-    color: inherit;
-  }
-
-  .filler2 {
-    background-color: rgb(165, 70, 70);
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-    border-left: none;
-  }
-  .contactLeft {
-    width: 25%;
-    height: 12%;
-  }
-  .contactRight {
-    width: 25%;
-    height: 12%;
-  }
-}
-/*--------------------------------------1250px - 1660px------------------------------------*/
-@media screen and (min-width: 1250px) and (max-width: 1660px) {
-  .Heidi {
-    grid-template-columns: 1fr 1.2fr;
-  }
-  .heidiImage {
-    width: 80%;
-  }
-
-  .smallText1 {
-    font-size: 20px;
-  }
-  .smallText2 {
-    font-size: 22px;
   }
 }
