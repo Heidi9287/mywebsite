@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 body {
-  background-color: #f3f3ee;
+  background-color: rgb(252, 249, 237);
   background-size: cover;
   font-family: "Raleway", sans-serif;
   height: 100%;
@@ -10,306 +10,69 @@ body {
   font-weight: 400;
   font-size: 30px;
   overflow-x: auto;
-}
-.navbar {
-  font-weight: 400;
-  grid-area: nav;
-  font-size: 16px;
-  display: grid;
-  grid-template-rows: 5% 1fr 12%;
-  grid-template-areas: "name" "directory" "empty1";
-  min-height: 600px;
-  height: 100vh;
-}
-
-.firstItem {
-  box-sizing: border-box;
-  border-right: solid black 5px;
-  grid-area: name;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(244, 239, 197);
-}
-.firstItem a {
-  text-decoration: none;
-  color: #5e848a;
-}
-
-.innerBar {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  grid-area: directory;
-  border-right: solid black 5px;
-  border-top: solid black 5px;
-  align-items: center;
-  justify-content: flex-start;
-  line-height: 100px;
-}
-.innerBar a {
-  text-decoration: none;
-  color: rgb(165, 70, 70);
-}
-.empty1 {
-  background-color: rgb(165, 70, 70);
-  border-right: solid black 5px;
-  border-top: solid black 5px;
-  border-bottom: solid black 5px;
-  grid-area: empty1;
-}
-.empty3 {
-  background-color: #9bc4ca;
-  grid-area: empty3;
-  border-top: solid black 5px;
-  display: flex;
-  justify-content: center;
-  border-bottom: solid black 5px;
-}
-.empty4 {
-  grid-area: empty4;
-  border-top: solid black 5px;
-  border-left: solid black 5px;
-  border-bottom: solid black 5px;
-}
-@keyframes arrow-bounce1 {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(10px);
-  }
-}
-@keyframes arrow-bounce2 {
-  from {
-    transform: translateY(10px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-.arrow-down {
-  border: solid rgb(244, 239, 197);
-  border-width: 0 3px 3px 0;
-  padding: 10px;
-  transform: rotate(45deg);
-  position: absolute;
-  cursor: pointer;
-}
-.arrow-up {
-  border: solid rgb(244, 239, 197);
-  border-width: 0 3px 3px 0;
-  padding: 10px;
-  transform: rotate(225deg);
-  position: absolute;
-  cursor: pointer;
-}
-.arrowAnimation {
-  animation: arrow-bounce1 1.5s ease-in-out infinite alternate;
-  z-index: 2;
-  position: absolute;
-  top: 92%;
-  left: 48%;
-}
-.arrowAnimation2 {
-  animation: arrow-bounce2 1.5s ease-in-out infinite alternate;
-  z-index: 2;
-  position: absolute;
-  top: 92%;
-  left: 52%;
-}
-.entireHome {
-  display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav home";
-  z-index: 1;
-  position: relative;
+  color: #0f0892;
 }
 .home {
   display: grid;
-  grid-area: home;
-  grid-template-columns: 1fr 15%;
-  grid-template-rows: 88% 12%;
-  grid-template-areas: "intro moreToCome" "empty3 empty4";
+  grid-template-rows: 8% 1fr;
+  grid-template-areas: "header" "projects";
   height: inherit;
 }
-.moreToCome {
-  background-color: #9bc4ca;
-  grid-area: moreToCome;
-  border-left: solid black 5px;
-  color: rgb(244, 239, 197);
-}
-.moreToComeInner .hiddenText {
-  display: none;
-  color: rgb(165, 70, 70);
-}
-
-.moreToComeInner {
+.header {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  height: 50%;
+  grid-area: header;
+  border-bottom: #0f0892 1px solid;
+  color: #0f0892;
+  position: fixed;
   width: 100%;
-  font-size: 16px;
+  height: 130px;
+  background-color: rgb(252, 249, 237);
 }
-.moreToComeInner p {
-  margin: 0;
-  padding-bottom: 25%;
-  font-weight: 400;
-  font-size: 18px;
-}
-.moreToComeInner:hover {
-  background-color: #a8b0b2;
-}
-.moreToComeInner:hover .hiddenText {
-  display: block;
-}
-.intro {
-  height: 100%;
+.navbar {
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  grid-area: intro;
-  justify-content: flex-end;
-  width: 80%;
-  margin-left: 15%;
-}
-.Heidi {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "heidi smallText1" "heidi name";
-}
-.heidiImage {
-  grid-area: heidi;
+  justify-content: right;
   width: 70%;
-  justify-self: end;
+  align-items: center;
+}
+.navbar a {
+  margin-right: 5%;
+  font-size: 16px;
+  color: inherit;
 }
 .name {
-  font-size: 120px;
-  color: #9bc4ca;
-  margin: 0;
-  text-align: right;
-  font-weight: 500;
-  grid-area: name;
-  align-self: flex-end;
+  font-size: 36px;
+  margin: auto;
+  display: block;
+  padding-left: 5%;
 }
-.smallText1 {
-  grid-area: smallText1;
-  text-align: right;
-  margin: 0;
-  font-size: 25px;
-  color: rgb(165, 70, 70);
-  padding-right: 20px;
-  font-weight: 300;
-}
-.smallText2 {
-  text-align: right;
-  margin: 0;
-  color: rgb(165, 70, 70);
-  padding-bottom: 5%;
-  font-weight: 300;
-}
-.entireAbout {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav about";
-}
-.about {
-  grid-area: about;
-  display: grid;
-  grid-template-columns: 1fr 15%;
-  grid-template-rows: 1fr 12%;
-  color: #5e848a;
+.introduction {
+  font-size: 16px;
+  margin: auto;
+  display: block;
   font-weight: 400;
-  width: 92vw;
-  grid-template-areas: "aboutContent more" "empty3 empty4";
 }
-.aboutContent {
-  box-sizing: border-box;
-  font-size: 20px;
-  padding: 3% 10%;
-  margin: 0;
-  grid-area: aboutContent;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.education {
-  font-weight: 500;
-  font-size: 30px;
-  margin: 0 0 1% 0;
-}
-.techStack {
-  font-weight: 500;
-  font-size: 30px;
-  margin: 2% 0;
-}
-.schools {
-  display: flex;
-  flex-direction: column;
-  height: 25%;
-  justify-content: space-evenly;
-}
-.breakUpFlexBox {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  line-height: 30px;
-}
-.aboutFooter {
-  font-size: 30px;
-  color: rgb(165, 70, 70);
-}
-.more {
-  grid-area: more;
-  background-color: rgb(244, 239, 197);
-  margin: 0;
-  border-left: solid black 5px;
-}
-.entireProject {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav project";
-}
+
 .projects {
-  color: #5e848a;
-  font-weight: 400;
-  grid-area: project;
+  grid-area: projects;
   display: grid;
-  grid-template-columns: 1fr 15%;
-  grid-template-rows: 1fr 12%;
-  grid-template-areas: "projectFlexBox filler" " empty3  empty4";
-  width: 92vw;
+  grid-template-columns: 1fr 35%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "codenames projectPageTitle"
+    "graceshopper projectPageTitle" "cardGame projectPageTitle";
+  width: 100%;
+}
+.projectPageTitle {
+  grid-area: projectPageTitle;
+  font-size: 108px;
+  color: #0f0892;
+  position: fixed;
+  top: 8%; /* Fixed to the top of the viewport */
+  right: 8%;
 }
 .projects a {
   color: inherit;
-}
-.projectContent {
-  font-size: 18px;
-  line-height: 36px;
-}
-.projectFlexBox {
-  grid-area: projectFlexBox;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding-left: 5%;
-  width: 75%;
-}
-
-.moreProject {
-  grid-area: moreProject;
-  font-size: 30px;
-  color: rgb(165, 70, 70);
-  margin: 0;
-  font-weight: 400;
 }
 .projectTitle {
   font-size: 30px;
@@ -320,63 +83,129 @@ body {
   font-size: 18px;
   margin: 0;
 }
-.filler {
-  background-color: rgb(165, 70, 70);
-  grid-area: filler;
-  border-left: solid black 5px;
+.projectContent {
+  font-size: 18px;
+  line-height: 26px;
+  width: 80%;
 }
-.entireContact {
-  position: relative;
-  z-index: 1;
-  background-size: cover;
-  margin: 0;
+.codenames {
+  grid-area: codenames;
+  padding: 5% 0 0 15%;
+}
+.projectImage {
+  width: 50%;
+  padding-top: 2%;
+}
+.graceshopper {
+  grid-area: graceshopper;
+  padding: 5% 0 0 15%;
+}
+.cardGame {
+  grid-area: cardGame;
+  padding: 5% 0 0 15%;
+}
+
+.about {
   display: grid;
-  grid-template-columns: 8vw 1fr;
-  grid-template-areas: "nav contact";
+  grid-template-rows: 8% 1fr;
+  grid-template-areas: "header" "aboutContent";
+  height: inherit;
 }
-.contact {
-  overflow-y: auto;
-  grid-area: contact;
+.aboutContent {
+  font-size: 20px;
+  grid-area: aboutContent;
+  list-style: none;
+  width: 100%;
   display: grid;
-  width: 92vw;
-  grid-template-columns: 1fr 15%;
-  grid-template-rows: 1fr 12%;
-  color: #5e848a;
-  grid-template-areas: "contactFlexBox filler2" " empty3 empty4";
+  grid-template-areas:
+    "education cvPageTitle"
+    "techStack cvPageTitle"
+    "aboutFooter cvPageTitle";
+  grid-template-columns: 1fr 35%;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-.contactFlexBox {
-  grid-area: contactFlexBox;
+.cvPageTitle {
+  grid-area: cvPageTitle;
+  font-size: 108px;
+  color: #0f0892;
+  top:8%;
+  right:8%;
+  position:fixed;
+}
+.education {
+  grid-area: education;
+  padding: 5% 0 0 15%;
+}
+.education li{
+  padding-top: 5%;
+}
+.techStack {
+  grid-area: techStack;
+  padding: 5% 0 0 15%;
+}
+.techList{
   display: flex;
-  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
 }
-.methods h1 {
-  font-size: 40px;
+.techList li{
+  width: calc(33.33% - 10px); /* Adjust the width as needed, considering margins or paddings */
+  margin: 5px; /* Adjust the margin as needed */
+  box-sizing: border-box;
+}
+.aboutFooter{
+  grid-area: aboutFooter;
+  padding: 0 0 0 15%;
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: 8% 1fr;
+  grid-template-areas: "header" "contactContent";
+  height: inherit;
+}
+.contactContent {
+  grid-area: contactContent;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "contactLeft contactPageTitle"
+    "method contactRight";
+  grid-template-columns: 1fr 35%;
+  grid-template-rows:  1fr 1fr;
+}
+.contactPageTitle{
+  grid-area: contactPageTitle;
+  font-size: 88px;
+  color: #0f0892;
+  top:8%;
+  right:8%;
+  position:fixed;
 }
 .methods {
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   line-height: 0;
   align-items: center;
+  grid-area: method;
+  width: 50%;
+  margin-left: 50%;
 }
 
 .methods a {
   color: inherit;
 }
-.filler2 {
-  grid-area: filler2;
-  background-color: #9bc4ca;
-  border-left: solid black 5px;
-}
 .contactLeft {
-  width: 30%;
-  height: 22%;
-  align-self: flex-end;
+height: 50%;
+ grid-area: contactLeft;
+ padding:10% 0 0 0;
 }
 .contactRight {
-  width: 30%;
-  height: 22%;
+  grid-area:contactRight;
+ justify-self: right;
+ align-self: flex-end;
+ height: 60%;
 }
 /*--------------------------------------600px below------------------------------------*/
 @media screen and (max-width: 600px) {
@@ -390,43 +219,7 @@ body {
     grid-template-rows: 85vh 5vh;
     grid-template-areas: "intro intro" "moreToCome empty4";
   }
-  .navbar {
-    font-size: 12px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-areas: "name directory empty1";
-    min-height: 0;
-    height: auto;
-  }
-  .firstItem {
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-  }
 
-  .innerBar {
-    flex-direction: row;
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
-    border-top: none;
-    justify-content: space-around;
-    line-height: 0;
-  }
-  .empty1 {
-    border-right: none;
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty3 {
-    border-top: none;
-    border-bottom: solid black 3px;
-  }
-  .empty4 {
-    background-color: #9bc4ca;
-    border-top: solid black 3px;
-    border-left: solid black 3px;
-    border-bottom: solid black 3px;
-  }
   .moreToCome {
     display: flex;
     flex-direction: row;
@@ -456,21 +249,13 @@ body {
     width: fit-content;
     margin: auto 2%;
   }
-  .Heidi {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "heidi smallText1" "heidi name";
-  }
+
   .heidiImage {
     grid-area: heidi;
     width: 100%;
     justify-self: end;
   }
-  .name {
-    padding-right: 5%;
-    font-size: 40px;
-  }
+
   .smallText1 {
     text-align: right;
     margin: 0;
@@ -507,27 +292,6 @@ body {
     padding: 5px;
     transform: rotate(225deg);
   }
-  .entireAbout {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "about";
-    height: 100vh;
-  }
-  .about {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "aboutContent aboutContent" "more empty4";
-  }
-  .aboutContent {
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-  }
   .education {
     font-size: 25px;
   }
@@ -551,21 +315,9 @@ body {
     padding: 0px 2px;
     list-style: none;
   }
-  .entireProject {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "project";
-    height: 100vh;
-  }
-  .projectFlexBox {
-    justify-content: space-around;
-    width: 100%;
-  }
+
   .projects {
     width: auto;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 1fr 5vh;
-    grid-template-areas: "projectFlexBox projectFlexBox" "filler empty4";
   }
   .filler {
     border-top: solid black 3px;
@@ -638,25 +390,6 @@ body {
 }
 /*--------------------------------------600px - 800px------------------------------------*/
 @media screen and (min-width: 600px) and (max-width: 800px) {
-  .entireHome {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "home";
-  }
-  .home {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "intro intro" "moreToCome empty4";
-  }
-  .navbar {
-    font-size: 12px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-areas: "name directory empty1";
-    min-height: 0;
-    height: auto;
-  }
   .firstItem {
     border-right: solid black 3px;
     border-bottom: solid black 3px;
@@ -715,10 +448,6 @@ body {
     margin: auto 2%;
   }
 
-  .name {
-    padding-right: 15%;
-    font-size: 60px;
-  }
   .smallText1 {
     text-align: right;
     margin: 0;
@@ -762,21 +491,6 @@ body {
     grid-template-areas: "nav" "about";
     height: 100vh;
   }
-  .about {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "aboutContent aboutContent" "more empty4";
-  }
-  .aboutContent {
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-  }
   .more {
     grid-area: more;
     background-color: rgb(165, 70, 70);
@@ -784,25 +498,6 @@ body {
     border-left: none;
     border-top: solid black 3px;
     border-bottom: solid black 3px;
-  }
-  .aboutFooter {
-    font-size: 18px;
-  }
-  .entireProject {
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "project";
-    height: 100vh;
-  }
-  .projectFlexBox {
-    justify-content: space-around;
-    width: 100%;
-  }
-  .projects {
-    width: auto;
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 1fr 5vh;
-    grid-template-areas: "projectFlexBox projectFlexBox" "filler empty4";
   }
   .projectContent {
     font-size: 18px;
@@ -868,25 +563,6 @@ body {
 }
 /*--------------------------------------800px - 1250px------------------------------------*/
 @media screen and (min-width: 800px) and (max-width: 1250px) {
-  .entireHome {
-    grid-template-rows: 8vh 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "nav" "home";
-  }
-  .home {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "intro intro" "moreToCome empty4";
-  }
-  .navbar {
-    font-size: 15px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 20% 70% 10%;
-    grid-template-areas: "name directory empty1";
-    min-height: 0;
-    height: auto;
-  }
   .firstItem {
     border-right: solid black 3px;
     border-bottom: solid black 3px;
@@ -943,10 +619,6 @@ body {
     width: fit-content;
     margin: auto 2%;
   }
-  .name {
-    padding-right: 15%;
-    font-size: 60px;
-  }
   .smallText1 {
     text-align: right;
     margin: 0;
@@ -989,24 +661,6 @@ body {
     grid-template-columns: auto;
     grid-template-areas: "nav" "about";
     height: 100vh;
-  }
-  .about {
-    grid-template-columns: auto 30vw;
-    grid-template-rows: 85vh 5vh;
-    grid-template-areas: "aboutContent aboutContent" "more empty4";
-  }
-  .aboutContent {
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-  }
-  .aboutFooter {
-    font-size: 20px;
   }
   .more {
     grid-area: more;
@@ -1102,9 +756,7 @@ body {
   .heidiImage {
     width: 80%;
   }
-  .name {
-    font-size: 90px;
-  }
+
   .smallText1 {
     font-size: 20px;
   }
