@@ -5,7 +5,7 @@ const Projects = () => {
       <h1 className="projectPageTitle">Work</h1>
       <div className="codenames">
         <h1 className="projectTitle">
-          <a href="https://codenames-0nt7.onrender.com/">01. CODENAMES</a>
+          <a href="https://www.youtube.com/watch?v=nMLCx3XAIkE" target="_blank" rel="noreferrer">01. CODENAMES</a>
         </h1>
 
         <img
@@ -16,7 +16,7 @@ const Projects = () => {
 
         <p className="secondTitle">Design and Devlopement </p>
         <p className="secondTitle">
-          <a href="https://github.com/2208-Capstone-Team-2/codenames">Github</a>
+          <a href="https://github.com/2208-Capstone-Team-2/codenames" target="_blank" rel="noreferrer">Github</a>
         </p>
 
         <p className="projectContent">
@@ -29,7 +29,7 @@ const Projects = () => {
       </div>
       <div className="graceshopper">
       <h1 className="projectTitle">
-          <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">
+          <a href="https://app.screencastify.com/v2/watch/GZ0GiOIWu8ViJHbv4Wwf" target="_blank" rel="noreferrer">
            02. GRACE SHOPPER
           </a>
         </h1>
@@ -40,7 +40,7 @@ const Projects = () => {
         />
         <p className="secondTitle">Design and Devlopement </p>
         <p className="secondTitle">
-          <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">Github</a>
+          <a href="https://github.com/2208-GS-Team-4/Acme-Shopping" target="_blank" rel="noreferrer">Github</a>
         </p>
         <p className="projectContent">
           Our eCommerce website was built using JavaScript, React, Redux,
@@ -51,20 +51,23 @@ const Projects = () => {
       </div>
       <div className="cardGame">
       <h1 className="projectTitle">
-          <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">
+          <a href="https://app.screencastify.com/v2/watch/ABuuMxbO9vK4G5mZkKJO" target="_blank" rel="noreferrer">
            03. Art Trivia
           </a>
         </h1>
         <img
-          src="graceShopper.jpeg"
-          alt="home page of graceshopper project"
+          src="trivia.png"
+          alt="home page of trivia project"
           className="projectImage"
         />
         <p className="secondTitle">Design and Devlopement </p>
         <p className="secondTitle">
-          <a href="https://github.com/2208-GS-Team-4/Acme-Shopping">Github</a>
+          <a href="https://github.com/Heidi9287/artTrivia" target="_blank" rel="noreferrer">Github</a>
         </p>
-        card game</div>
+        <p className="projectContent">
+         The purose of this project is to practice Next.Js and Typescript. 
+        </p>
+        </div>
     </div>
   );
 };
