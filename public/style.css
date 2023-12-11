@@ -349,6 +349,7 @@ width: 30%;
     font-size: 68px;
     top: 15%;
     right: 5%;
+    width: 35%;
   }
   .codenames{
     padding: 10% 0 0 10%;;
@@ -367,11 +368,13 @@ width: 30%;
   }
 .projectContent{
   font-size: 16px;
+  width: 70%;
 }
 .cvPageTitle{
   font-size: 68px;
     top: 15%;
     right: 5%;
+    width: 30%;
 }
 
 .education{
@@ -385,46 +388,27 @@ width: 30%;
 .techStack{
   font-size: 16px;
   padding: 5% 0 0 10%;
+  width: 70%;;
 }
+.techList{
 
+  padding-left: 0;;
+}
 .aboutFooter {
   font-size: 14px;
   padding: 5% 0 0 10%;
 }
-  .contactFlexBox {
-    grid-area: contactFlexBox;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-  }
-  .methods h1 {
-    font-size: 20px;
-  }
-  .methods {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 0;
-    align-items: center;
-  }
 
-  .methods a {
-    color: inherit;
-  }
+.contactPageTitle{
+  font-size: 68px;
+  top: 15%;
+  right: 5%;
+  width: 40%;
+}
+.contactBlock{
+  width:73%;
+  padding: 100px 0 0 0;
+}
 
-  .filler2 {
-    background-color: rgb(165, 70, 70);
-    border-top: solid black 3px;
-    border-bottom: solid black 3px;
-    border-left: none;
-  }
-  .contactLeft {
-    width: 25%;
-    height: 12%;
-  }
-  .contactRight {
-    width: 25%;
-    height: 12%;
-  }
+
 }
