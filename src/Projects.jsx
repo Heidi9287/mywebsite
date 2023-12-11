@@ -2,7 +2,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="projects">
-      <h1 className="projectPageTitle">Project</h1>
+      <h1 className="projectPageTitle">Work</h1>
       <div className="codenames">
         <h1 className="projectTitle">
           <a href="https://codenames-0nt7.onrender.com/">01. CODENAMES</a>

@@ -5,7 +5,7 @@ const Contact = () => {
       <div className="contact">
         <Header />
         <div className="contactContent">
-        <h2 className="contactPageTitle"> Contact
+        <h2 className="contactPageTitle"> Let's connect
           </h2>
           <div className="contactBlock">
         <img src="contactLeft.png" alt="stay in touch" className="contactLeft"/>

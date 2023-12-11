@@ -65,7 +65,7 @@ body {
 }
 .projectPageTitle {
   grid-area: projectPageTitle;
-  font-size: 108px;
+  font-size: 98px;
   color: #0f0892;
   position: fixed;
   top: 8%; /* Fixed to the top of the viewport */
@@ -129,7 +129,7 @@ body {
 }
 .cvPageTitle {
   grid-area: cvPageTitle;
-  font-size: 108px;
+  font-size: 98px;
   color: #0f0892;
   top: 8%;
   right: 8%;
@@ -183,7 +183,7 @@ body {
 }
 .contactPageTitle {
   grid-area: contactPageTitle;
-  font-size: 108px;
+  font-size: 78px;
   color: #0f0892;
   top: 8%;
   right: 8%;
@@ -194,11 +194,12 @@ body {
 }
 .contactBlock{
   grid-area: contactBlock;
-  padding:5% 0 0 0;
+  padding:10% 0 0 0;
   height: 100%;
   display: flex;
   flex-direction: column;
 justify-content: space-evenly;
+width: 100%;
 }
 .methods {
   font-size: 18px;
